@@ -2,7 +2,7 @@ import React from 'react'
 
 const Participants = () => {
 
-    const list=['Vinay Kumar','Rakshan','Nishan','Pavithra','Charan','Anusha','Riyanshi','Keerthana','Rishik','Divakar','Nisha','Guru','Shivananda','Sujatha','WildCard - 1','WildCard - 2']
+    const list=['Vinay Kumar','Rakshan','Nishan','Pavithra','Charan','Anusha','Riyanshi','Keerthana','Appithu','Rishik','Divakar','Nisha','Guru','Shivananda','Sujatha','WildCard - 1','WildCard - 2']
   return (
     <div id="participants" className='list-p' >
         <h1 className='party'>Participants</h1>
