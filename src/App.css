@@ -1,38 +1,222 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+}
+.head {
+  display :flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color : #010483;
+  color:white;
+  align-items : center;
+  position: fixed;
+  width: 100%;
+
+}
+
+.head-1 {
+  display : flex;
+  justify-content: space-around;
+  width: 50vw;
+  font-size: 10px;
+}
+
+.f-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height : 100vh;
+  background-image: url("https://tintonresorts.com/wp-content/uploads/2023/11/Agumbe-2-1000x565.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.head-f-page{
+  font-size: 100px;
+  color: rgb(202, 196, 196);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 8 equal columns */
+  gap: 20px; /* Optional: space between items */
+  padding: 10px;
+}
+
+
+.card-box{
+  border : 1px;
+  width :352px;
+  margin: 5px;
+  background-color: #FFFFFF;
+}
+
+p{
+  color: rgba(152, 158, 166, 0.588);
+  font-size: 1em;
+  padding: 10px;
+}
+
+h2{
+  color :#898E96;
+  padding: 10px;
+}
+
+.place-head{
+  padding-left: 20px;
+  padding-top: 10px;
+  background-color:rebeccapurple;
+  color : #898E96;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.list{
+  width :150px;
+  padding: 10px;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700; 
+  color: #898E96;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list-parent{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Creates 8 equal columns */
+  gap: 50px; /* Optional: space between items */
+  justify-items: center; /* Center items in their grid cells */
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.list-p{
+  background-color:  rgb(240, 242, 245);
+  padding-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list-p > h1{
+  /* padding-top: 10px; */
+  padding-left: 30px;
+  /* padding-bottom: 20px; */
+
+}
+
+.schedule{
+  background-color: rgb(240, 242, 245);
+  padding-bottom: 50px;
+}
+
+.sched{
+  background-color: #FFFFFF;
+  color: #898E96;
+  margin-top: 10px;
+  width : 500px
+}
+
+.split{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.sch{
+  padding: 10px;
+  padding-left: 30px;
+  background-color:rebeccapurple;
+  color : #898E96
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.games{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-around;
+  background-color: rgb(240, 242, 245);
 }
+
+.games1 {
+  padding: 10px;
+  background-color:rebeccapurple;
+  color : #898E96
+}
+
+.games2{
+ 
+  background-color: rgb(240, 242, 245);
+}
+
+.camp{
+  width: 100%;
+ 
+}
+
+.campFire{
+  padding-top: 20px;
+}
+
+.contact {
+  margin-top: -4px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rebeccapurple;
+}
+
+.party{
+  padding: 10px;
+  background-color:rebeccapurple;
+  color : #898E96
+}
+
+.place-card{
+  padding-bottom: 50px;
+ 
+}
+
+.pla{
+  padding-bottom: 10px;
+}
+
+
+/* Responsiveness */
+
+@media(min-width : 320px) and (max-width : 480px){
+  .head {
+  display :flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  /* padding-top: 10px;
+  padding-bottom: 20px;
+  background-color : #010483;
+  color:white;
+  align-items : center;
+  position: fixed; */
+  }
+  .head-1 {
+    width  : 164vw;
+    font-size: 10px;
+  }
+  
+  #root {
+    width : fit-content
+  }
+
+  .f-page {
+    height : 200vh
+  }
+
+  
+
+ 
+
+  
+
+}
+

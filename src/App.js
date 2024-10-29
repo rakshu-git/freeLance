@@ -1,23 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Firstpage from './components/Firstpage';
+import Places from './components/Places';
+import Participants from './components/Participants';
+import Schedule from './components/Schedule';
+import Games from './components/Games';
+import Campfire from './components/Campfire';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Header/>
+        <Firstpage/>
+        <Places/>
+        <Participants/>
+        <Schedule/>
+        <Games/>
+        <Campfire/>
     </div>
   );
 }
