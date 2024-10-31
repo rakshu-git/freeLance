@@ -1,10 +1,12 @@
 *{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 .head {
   display :flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding-top: 10px;
   padding-bottom: 20px;
   background-color : #010483;
@@ -43,6 +45,7 @@
   grid-template-columns: repeat(4, 1fr); /* Creates 8 equal columns */
   gap: 20px; /* Optional: space between items */
   padding: 10px;
+
 }
 
 
@@ -184,13 +187,15 @@ h2{
   padding-bottom: 10px;
 }
 
-
+.icon{
+  display: none;
+}
 /* Responsiveness */
 
 @media(min-width : 320px) and (max-width : 480px){
   .head {
-  display :flex;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   padding-left: 10px;
   /* padding-top: 10px;
   padding-bottom: 20px;
@@ -202,21 +207,130 @@ h2{
   .head-1 {
     width  : 164vw;
     font-size: 10px;
+
   }
   
   #root {
-    width : fit-content
+    /* width : 80em */
+    width: fit-content;
+
   }
 
   .f-page {
     height : 200vh
   }
 
-  
+  .icon {
+    display: inline;
+    padding-left: 195vw;
+    padding-top: 11px;
+  }
 
+  .content {
+    display : none
+  }
+
+  .navBar{
+    display: flex;
+    
+  }
+
+  .navVer{
+    display: block;
+    width: 100vw;
+    height: 200vh;
+    z-index: 100000;
+    position: absolute;
+    top: -13px;
+    left : 0px;
+    background-color: #010483;
+    line-height: 138px;
+    padding-left: 87px;
+  }
+
+  .closeIcon{
+    padding-left: 340px;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 8 equal columns */
+    padding: 10px;
+    padding-left: 12px;
+  }
+
+  .card-box{
+    border : 1px;
+    width :585px;
+    margin: 5px;
+    background-color: #FFFFFF;
+    margin-top: 30px;
+  }
+
+  .list-parent{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  }
+
+  .split {
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 543px;
+    padding-left: 35px;
+  
+  }
+
+  .bor{
+    margin-top: 50px;
+  }
+
+  .bor1{
+    font-size: 35px;
+  }
+
+  .sched{
+    width : 210%;
+    margin-top: 30px;
+    font-size: 30px;
+  }
+
+  .list {
+    font-size: 30px ;
+    width: 211px;
+  }
+
+  p{
+    font-size: 2em;
+  }
+
+  h2{
+    font-size: 2.5em;
+  }
+
+  h1{
+    font-size: 3em;
+  }
+
+  .games{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 8 equal columns */
+    padding-left: 35px;
+  }
+
+  .contact{
+    font-size: 10px;
+  }
+  .imgRes{
+    width: 580px;
+    height: 430px;
+  }
+
+  .navBar h1{
+    font-size: 3em;
+    width: 97%;
+  }
  
-
-  
 
 }
 

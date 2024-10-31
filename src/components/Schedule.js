@@ -5,9 +5,9 @@ const Schedule = () => {
         <div id="schedule" className='schedule'>
             <h1 className='sch'>Schedule</h1>
             <div className='split'>
-                <div>
+                <div className='bor1'>
                     <h3>Date :- 1/11/2024</h3>
-                    <div >
+                    <div  >
                         <p className='sched'>Departure from Mangalore is scheduled for 1:30 PM.</p>
                         <p className='sched'>We will visit Varanga Temple at 4:00 PM.</p>
                         <p className='sched'>Next, we'll head to Agumbe Sunset Point by 5:00 PM.</p>
@@ -16,7 +16,7 @@ const Schedule = () => {
                         <p className='sched'>We'll enjoy games and a campfire from 10:00 PM to 11:30 PM.</p>
                     </div>
                 </div>
-                <div>
+                <div className='bor bor1'>
                     <h3>Date :- 2/11/2024</h3>
                     <p className='sched'>We will leave early at 6:00 AM after breakfast.</p>
                     <p className='sched'>First stop is Shibalagudde at 7:00 AM.</p>

@@ -7,10 +7,13 @@ import Participants from './components/Participants';
 import Schedule from './components/Schedule';
 import Games from './components/Games';
 import Campfire from './components/Campfire';
+import { useEffect, useRef, useState } from 'react';
 
 function App() {
+
+
   return (
-    <div>
+    <div className="container">
         <Header/>
         <Firstpage/>
         <Places/>
